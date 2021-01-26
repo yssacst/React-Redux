@@ -1,6 +1,13 @@
-export function adicionarFavorito(musicas) {
+export function tocarMusica(musicas) {
     return {
-      type: "ADICIONAR_FAVORITO",
+      type: "TOCAR_MUSICA",
+      musicas,
+    };
+  }
+  
+  export function pararMusica(musicas) {
+    return {
+      type: "PARAR_MUSICA",
       musicas,
     };
   }

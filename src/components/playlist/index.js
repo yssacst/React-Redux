@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import '../playlist/index.css';
 
 import { bindActionCreators } from 'redux';
-import * as FavoritoAction from '../../store/actions/index';
+import * as MusicaAction from '../../store/actions/index';
 
-const playlist = ({ musicas, adicionarFavorito }) => {
+const playlist = ({ musicas, tocarMusica,pararMusica }) => {
   return (
     <section>
         <div className='navbar'>
@@ -15,7 +15,8 @@ const playlist = ({ musicas, adicionarFavorito }) => {
         {musicas.map((musica) => (
           <li key={musica.id}>
             {musica.titulo} <br/> {musica.cantor} | {musica.ano}
-            <button onClick={() => adicionarFavorito(musica)}> PLAY </button>
+            <button onClick={() => tocarMusica(musica)}> PLAY </button>
+            <button onClick={() => pararMusica(musica)}> STOP </button>
           </li>
         ))}
       </ul>
@@ -27,7 +28,7 @@ const mapStateToProps = (state) => ({
   musicas: state.musicas.playlist,
 });
 
-const mapDispatchToProps = (dispatch) => bindActionCreators(FavoritoAction, dispatch)
+const mapDispatchToProps = (dispatch) => bindActionCreators(MusicaAction, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(playlist);
 

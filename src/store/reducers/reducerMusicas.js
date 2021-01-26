@@ -26,10 +26,16 @@ const ESTADO_INICIAL = {
 };
 
 export default function musicas(state = ESTADO_INICIAL, action) {
-  if (action.type === "ADICIONAR_FAVORITO") {
+  if (action.type === "TOCAR_MUSICA") {
     return {
       ...state,
       musica: action.musicas,
+    };
+  }
+  if (action.type === "PARAR_MUSICA") {
+    return {
+      ...state,
+      musica: ESTADO_INICIAL,
     };
   }
   return state;
