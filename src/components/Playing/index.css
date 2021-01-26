@@ -1,0 +1,32 @@
+h1{
+    color:white;
+}
+.boxPrincipal{
+    text-align: center;
+    justify-content: center;
+}
+.cardPrincipal{
+    display: flex;
+    text-align: center;
+    margin: 0 100px 0 100px ;
+    box-shadow: 5px 5px 20px rgb(94, 11, 11);
+    background-color: rgb(240, 217, 217);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.cardPrincipal p{
+    text-align: center;
+}
+.cardLeft img{
+    width: 150px;
+}
+.cardRight{
+    padding:30px 20px 0 20px;
+}
+.cardRight #title{
+    color:rgb(245, 99, 99);
+}
+.cardRight #subtitle{
+    color:rgb(134, 19, 19);
+    font-size:12px;
+}

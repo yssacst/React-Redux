@@ -1,0 +1,35 @@
+*{
+margin:0;
+padding:0;
+}
+.navbar{
+    width:auto;
+    background-color: rgb(139, 25, 25);
+    height:40px;
+    color:white;
+    text-align: center;
+    padding:9px;
+    box-shadow: 3px 3px 10px rgb(59, 20, 20);
+}
+section ul{
+    display:flex;
+    margin:50px;
+    justify-content: center;
+    list-style: none;
+}
+li{
+    display:flex;
+    padding:20px;
+    margin:5px;
+    color:white;
+    border-radius: 5px;
+    background-color: rgba(105, 58, 58, 0.4);
+}
+li button{
+    margin:5px;
+    background-color: rgb(51, 6, 6);
+    color:white;
+    padding:8px;
+    border-radius: 5px;
+}
+/*Feito por RayssaCoosta*/
